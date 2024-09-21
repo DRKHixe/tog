@@ -1,0 +1,16 @@
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+    color: burlywood;
+}
+body{
+    background-color: #fff0ff;
+    color: brown;
+}
+a{
+    text-decoration: none;
+    color: #352753;
+}
+footer{
+    text-align: center;
+    color: #000;
+}
