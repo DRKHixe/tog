@@ -130,11 +130,15 @@ footer{
     font-weight: normal;
     font-family: 'Times New Roman', Times, serif;
 }
-.fa-facebook, .fa-whatsapp{
+.fa-facebook{
     font-size: 25px;
 }
 a{
     color: brown;
+}
+.voice-note{
+    justify-content: center;
+    text-align: center;
 }
 @media(max-width: 800px){
     .hideOnMobile{
@@ -185,4 +189,4 @@ a{
     .sidebar{
         width: 100%;
     }
-}
+}}
