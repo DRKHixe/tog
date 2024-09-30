@@ -74,7 +74,7 @@ h2{
 h1{
     text-align: center;
 }
-.contact{
+.contact, footer{
     background-color: black;
     color: whitesmoke;
     font-family: 'Times New Roman', Times, serif;
@@ -124,14 +124,21 @@ h1{
 .sermon a{
     text-decoration: none;
 }
-footer{
-    background-color: wheat;
-    text-align: center;
-    font-weight: normal;
-    font-family: 'Times New Roman', Times, serif;
-}
 .fa-facebook{
-    font-size: 25px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+}
+#media-choice{
+    text-align: center;
+    justify-content: flex-start;
+}
+.blog{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background-blend-mode: lighten;
 }
 a{
     color: brown;
@@ -140,7 +147,7 @@ a{
     justify-content: center;
     text-align: center;
 }
-@media(max-width: 800px){
+@media (max-width: 320px){
     .hideOnMobile{
         display: none;
     }
@@ -185,8 +192,119 @@ a{
         position: relative;
         float: right;
 }
+.slider{
+    width: 320px;
+    height: 200px;
+}
+    .sidebar{
+        width: 50%;
+        background-color: transparent;
+    }
+}
+@media (min-width: 375px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .slider-frame{
+        overflow: hidden;
+        height: 50%;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    /*slide animation*/
+    @-webkit-keyframes slide_animation{
+        0% {left: 0px;}
+        10% {left: 0px;}
+        20% {left: 600px;}
+        30% {left: 600px;}
+        40% {left: 1200px;}
+        50% {left: 1200px;}
+        60% {left: 600px;}
+        70% {left: 600px;}
+        80% {left: 0px;}
+        90% {left: 0px;}
+        100% {left: 0px;}
+    }
+    .slide-images{
+        width: 1800px;
+        height: 50%;
+        margin: 0 0 0 -1200px;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 33s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    .img-container{
+        height: 50%;
+        width: 600px;
+        position: relative;
+        float: right;
+    }
+    .slider{
+        width: 375px;
+        height: 200px;
+    }
 @media(max-width: 400px){
     .sidebar{
         width: 100%;
     }
-}}
+}
+@media (min-width: 768px){
+        .hideOnMobile{
+            display: none;
+        }
+        .menu-button{
+            display: block;
+        }
+        .slider-frame{
+            overflow: hidden;
+            height: 50%;
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        /*slide animation*/
+        @-webkit-keyframes slide_animation{
+            0% {left: 0px;}
+            10% {left: 0px;}
+            20% {left: 600px;}
+            30% {left: 600px;}
+            40% {left: 1200px;}
+            50% {left: 1200px;}
+            60% {left: 600px;}
+            70% {left: 600px;}
+            80% {left: 0px;}
+            90% {left: 0px;}
+            100% {left: 0px;}
+        }
+        .slide-images{
+            width: 1800px;
+            height: 50%;
+            margin: 0 0 0 -1000px;
+            position: relative;
+            -webkit-animation-name: slide_animation;
+            -webkit-animation-duration: 33s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+        .img-container{
+            height: 50%;
+            width: 600px;
+            position: relative;
+            float: right;
+        }
+        .slider{
+            width: 700px;
+        }
+    @media(max-width: 400px){
+        .sidebar{
+            width: 100%;
+        }
+}
