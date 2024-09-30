@@ -147,7 +147,7 @@ a{
     justify-content: center;
     text-align: center;
 }
-@media (max-width: 320px){
+@media (min-width: 320px){
     .hideOnMobile{
         display: none;
     }
@@ -201,7 +201,8 @@ a{
         background-color: transparent;
     }
 }
-@media (min-width: 375px){
+@media (min-width: 375px
+        max-width: 375px){
     .hideOnMobile{
         display: none;
     }
@@ -249,13 +250,16 @@ a{
     .slider{
         width: 375px;
         height: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 @media(max-width: 400px){
     .sidebar{
         width: 100%;
     }
 }
-@media (min-width: 768px){
+@media (min-width: 768px
+        max-width: 326){
         .hideOnMobile{
             display: none;
         }
