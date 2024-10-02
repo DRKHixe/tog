@@ -131,9 +131,8 @@ h1{
     justify-content: center;
     color: whitesmoke;
 }
-#media-choice{
+table{
     text-align: center;
-    justify-content: flex-start;
 }
 .blog{
     text-align: center;
@@ -193,15 +192,16 @@ a{
         width: 600px;
         position: relative;
         float: right;
-}
-.slider{
-    width: 60%;
-    height: 300px;
-}
+    }
+    .slider{
+        width: 60%;
+        height: 300px;
+    }
     .sidebar{
         width: 50%;
         background-color: transparent;
     }
+
 }
     @media (min-width: 375px){
     .hideOnMobile{
@@ -276,18 +276,18 @@ a{
         10% {left: 0px;}
         20% {left: 1200px;}
         30% {left: 1200px;}
-        40% {left: 1800px;}
-        50% {left: 1800px;}
+        40% {left: 2400px;}
+        50% {left: 2400px;}
         60% {left: 1200px;}
         70% {left: 1200px;}
-        80% {left: 1200px;}
-        90% {left: 1200px;}
-        100% {left:1200px;}
+        80% {left: 0px;}
+        90% {left: 0px;}
+        100% {left:0px;}
     }
     .slide-images{
         width: 3600px;
         height: 50%;
-        margin: 0 -1200px 0 -2400px;
+        margin: 0 0 0 -2400px;
         position: relative;
         -webkit-animation-name: slide_animation;
         -webkit-animation-duration: 33s;
@@ -305,6 +305,113 @@ a{
     width: 770px;
     height: 450px;
     margin-left: 0 0 20% ;
+    }
+    .sidebar{
+        width: 50%;
+        background-color: transparent;
+    }
+}
+@media (min-width: 1024px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .slider-frame{
+        overflow: hidden;
+        height: 50%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    /*slide animation*/
+    @-webkit-keyframes slide_animation{
+        0% {left: 0px;}
+        10% {left: 0px;}
+        20% {left: 1200px;}
+        30% {left: 1200px;}
+        40% {left: 2400px;}
+        50% {left: 2400px;}
+        60% {left: 1200px;}
+        70% {left: 1200px;}
+        80% {left: 0px;}
+        90% {left: 0px;}
+        100% {left:0px;}
+    }
+    .slide-images{
+        width: 3600px;
+        height: 50%;
+        margin: 0 0 0 -2400px;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 33s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    .img-container{
+        height: 50%;
+        width: 1200px;
+        position: relative;
+        float: right;
+    }
+    .slider{
+    width: 1024px;
+    height: 650px;
+    margin-left: 0 0 20% ;
+    }
+    .sidebar{
+        width: 50%;
+        background-color: transparent;
+    }
+}
+@media (min-width: 1440px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .slider-frame{
+        overflow: hidden;
+        height: 50%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    /*slide animation*/
+    @-webkit-keyframes slide_animation{
+        0% {left: 0px;}
+        10% {left: 0px;}
+        20% {left: 1600px;}
+        30% {left: 1600px;}
+        40% {left: 3200px;}
+        50% {left: 3200px;}
+        60% {left: 1600px;}
+        70% {left: 1600px;}
+        80% {left: 0px;}
+        90% {left: 0px;}
+        100% {left:0px;}
+    }
+    .slide-images{
+        width: 4800px;
+        height: 50%;
+        margin: 0 0 0 -3159px;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 33s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    .img-container{
+        height: 50%;
+        width: 1600px;
+        position: relative;
+        float: right;
+    }
+    .slider{
+    width: 1440px;
+    height: 800px;
     }
     .sidebar{
         width: 50%;
