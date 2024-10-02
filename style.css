@@ -58,6 +58,7 @@ nav li:first-child{
 }
 .sidebar a{
     width: 100%;
+    background-color: transparent;
 }
 .menu-button{
     display: none;
@@ -147,7 +148,7 @@ a{
     justify-content: center;
     text-align: center;
 }
-@media (min-width: 320px){
+@media (max-width: 320px){
     .hideOnMobile{
         display: none;
     }
@@ -193,16 +194,15 @@ a{
         float: right;
 }
 .slider{
-    width: 320px;
-    height: 200px;
+    width: 55%;
+    height: 300px;
 }
     .sidebar{
         width: 50%;
         background-color: transparent;
     }
 }
-@media (min-width: 375px
-        max-width: 375px){
+    @media (min-width: 375px){
     .hideOnMobile{
         display: none;
     }
@@ -246,69 +246,67 @@ a{
         width: 600px;
         position: relative;
         float: right;
-    }
-    .slider{
-        width: 375px;
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-@media(max-width: 400px){
+}
+.slider{
+    width: 70%;
+    height: 350px;
+}
     .sidebar{
-        width: 100%;
+        width: 50%;
+        background-color: transparent;
     }
 }
-@media (min-width: 768px
-        max-width: 326){
-        .hideOnMobile{
-            display: none;
-        }
-        .menu-button{
-            display: block;
-        }
-        .slider-frame{
-            overflow: hidden;
-            height: 50%;
-            width: 100%;
-            margin-left: 0px;
-            margin-top: 20px;
-        }
-        /*slide animation*/
-        @-webkit-keyframes slide_animation{
-            0% {left: 0px;}
-            10% {left: 0px;}
-            20% {left: 600px;}
-            30% {left: 600px;}
-            40% {left: 1200px;}
-            50% {left: 1200px;}
-            60% {left: 600px;}
-            70% {left: 600px;}
-            80% {left: 0px;}
-            90% {left: 0px;}
-            100% {left: 0px;}
-        }
-        .slide-images{
-            width: 1800px;
-            height: 50%;
-            margin: 0 0 0 -1000px;
-            position: relative;
-            -webkit-animation-name: slide_animation;
-            -webkit-animation-duration: 33s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            -webkit-animation-play-state: running;
-        }
-        .img-container{
-            height: 50%;
-            width: 600px;
-            position: relative;
-            float: right;
-        }
-        .slider{
-            width: 700px;
-        }
-    @media(max-width: 400px){
-        .sidebar{
-            width: 100%;
-        }
+@media (min-width: 768px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .slider-frame{
+        overflow: hidden;
+        height: 50%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    /*slide animation*/
+    @-webkit-keyframes slide_animation{
+        0% {left: 0px;}
+        10% {left: 0px;}
+        20% {left: 1200px;}
+        30% {left: 1200px;}
+        40% {left: 1800px;}
+        50% {left: 1800px;}
+        60% {left: 1200px;}
+        70% {left: 1200px;}
+        80% {left: 1200px;}
+        90% {left: 1200px;}
+        100% {left:1200px;}
+    }
+    .slide-images{
+        width: 3600px;
+        height: 50%;
+        margin: 0 -1200px 0 -2400px;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 33s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    .img-container{
+        height: 50%;
+        width: 1200px;
+        position: relative;
+        float: right;
+    }
+    .slider{
+    width: 770px;
+    height: 450px;
+    margin-left: 0 0 20% ;
+    }
+    .sidebar{
+        width: 50%;
+        background-color: transparent;
+    }
 }
