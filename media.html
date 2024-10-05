@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>media</title>
         <link href="style.css" rel="stylesheet">
+        <link href="media.css" rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -27,26 +28,24 @@
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-        <table align="center">
-            <tr>
-                <td>
-                    <a href="images.html">
-                        <img src="logo.jpg" alt="images"> 
-                    </a>
-                </td>
-                <td>
-                    <a href="videos.html">
-                        <video autoplay loop muted>
-                            <source src="background.mp4" type="video/mp4" alt="video">
-                        </video>
-                    </a>
-                </td>
-            </tr>
-        </table>
-        <article class="blog">
-                <h2>SPECIAL ANNOUNCEMENT</h2>
-
-        </article>
+       <div class="box-1">
+        <a href="images.html">
+            <img src="logo.jpg" alt="images" class="div-media">
+            <figcaption>IMAGES</figcaption>
+        </a>
+       </div>
+       <div class="box-2">
+        <a href="videos.html">
+            <img src="https://th.bing.com/th/id/R.515457eda03d1d1bbd7785b96dd2c0a8?rik=br3BYl26aCOt7Q&riu=http%3a%2f%2fwww.textalibrarian.com%2fmobileref%2fwp-content%2fuploads%2f2013%2f08%2fVideo.jpg&ehk=SnSbNnhwqFuki7CL1b8aLQ8Jb%2fRk%2fn0W8hmANq95yas%3d&risl=&pid=ImgRaw&r=0" alt="video" class="div-media">
+            <figcaption>VIDEOS</figcaption>
+        </a>
+        </div>
+        <section>
+            <strong>BLOG</strong>
+        </section>
+        <section>
+            <strong>SPECIAL ANNOUNCEMENT</strong>
+        </section>
         <script>
             function showSidebar(){
                 const sidebar = document.querySelector('.sidebar')
