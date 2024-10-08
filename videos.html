@@ -5,6 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>media</title>
         <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <style>
+            body{
+                background-color: white;
+            }   
+            figcaption{
+                font-size: small;
+                text-align: start;
+            }
+            .fa-facebook, .fa-instagram{
+                color: black;
+            }
+            footer{
+                background-color: transparent;
+                color: black;
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -27,18 +45,73 @@
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-       <div class="box-1">
-        <a href="images.html">
-            <img src="logo.jpg" alt="images" class="div-media">
-            <figcaption>IMAGES</figcaption>
-        </a>
-       </div>
-       <div class="box-2">
-        <a href="videos.html">
-            <img src="https://th.bing.com/th/id/R.515457eda03d1d1bbd7785b96dd2c0a8?rik=br3BYl26aCOt7Q&riu=http%3a%2f%2fwww.textalibrarian.com%2fmobileref%2fwp-content%2fuploads%2f2013%2f08%2fVideo.jpg&ehk=SnSbNnhwqFuki7CL1b8aLQ8Jb%2fRk%2fn0W8hmANq95yas%3d&risl=&pid=ImgRaw&r=0" alt="video" class="div-media">
-            <figcaption>VIDEOS</figcaption>
-        </a>
-        </div>
+        <header>LIVE SESSION</header><br>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.youtube.com/@rccglive">
+                        <img src="Rccg_logo.png" alt="rccg youtube" class="table">
+                        <figcaption>OFFICIAL RCCG<br>
+                        YOUTUBE CHANNEL</figcaption>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/profile.php?id=61565076790047&mibextid=ZbWKwL">
+                        <img src="nw ttog.jpg" alt="facebook live" class="table-2">
+                        <figcaption>FACEBOOK<br>
+                        CHANNEL</figcaption>
+                    </a>
+                </td>
+            </tr>
+        </table><br>
+        <header>RECORDED</header>
+        <table>
+            <tr>
+                <td>
+                    <a href="C:\Users\HP\Desktop\Praise Vid.zip">
+                        <i class="fas fa-folder"></i><br>
+                        <figcaption> PRAISE<br>
+                        ZIP FOLDER</figcaption>
+                    </a>
+                </td>
+                <td>
+                    <a href=>
+                        <i class="fas fa-folder"></i><br>
+                        <figcaption> BABY DEDICATION<br>
+                            ZIP FOLDER</figcaption>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="C:\Users\HP\Desktop\Praise Vid.zip">
+                        <i class="fas fa-folder"></i><br>
+                        <figcaption> PRAISE<br>
+                            ZIP FOLDER</figcaption>
+                    </a>
+                </td>
+                <td>
+                    <a href=>
+                        <i class="fas fa-folder"></i><br>
+                        <figcaption> BABY DEDICATION<br>
+                            ZIP FOLDER</figcaption>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <footer><br>
+            <div>
+                <p>
+                    <a href="https://www.facebook.com/profile.php?id=61565076790047&mibextid=ZbWKwL" target="_blank">
+                        <i class="fab fa-facebook"></i> 
+                    </a>
+                    <i class="fab fa-instagram"></i> 
+                </p>
+               </div>
+            &copy; 2024 The Redeemed Christian Church of God.
+            The Throne of Grace.
+            All rights reserved
+        </footer>
         <script>
             function showSidebar(){
                 const sidebar = document.querySelector('.sidebar')
