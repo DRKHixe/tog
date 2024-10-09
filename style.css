@@ -262,6 +262,10 @@ a{
         width: 110px;
         height: 110px;
     }
+    .give{
+        width: 100%;
+        height: 150px;
+    }
 }
     @media (min-width: 375px){
     .hideOnMobile{
@@ -340,6 +344,10 @@ a{
     }
     .fa-folder{
        padding: 40px;
+    }
+    .give{
+        width: 100%;
+        height: 200px;
     }
 }
 @media (min-width: 768px){
@@ -425,6 +433,10 @@ a{
         text-align: center;
         padding: 70px;
     }
+    .give{
+        width: 100%;
+        height: 150px;
+    }
 }
 @media (min-width: 1024px){
     .hideOnMobile{
@@ -496,6 +508,10 @@ a{
         text-align: center;
         margin: 90px;
         margin-bottom: 20px;
+    }
+    .give{
+        width: 100%;
+        height: 300px;
     }
 }
 @media (min-width: 1440px){
