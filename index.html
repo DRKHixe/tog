@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ttog parish</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="open.html">OPEN HEAVENS</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="give.html">GIVE</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">
+                    <img src="img/Rccg_logo.png" width="auto" height="100%" object-fit="cover">
+                    </a>
+                </li>
+                <li class="hideOnMobile"><a href="open.html">OPEN HEAVENS</a></li>
+                <li class="hideOnMobile"><a href="media.html">MEDIA</a></li>
+                <li class="hideOnMobile"><a href="give.html">GIVE</a></li>
+                <li class="hideOnMobile"><a href="#">ABOUT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <video autoplay loop muted>
+            <source src="tog.mp4">
+            Your browser doesn't support this video
+        </video>
+        <div class="sermon">
+            <a href="recording.html">
+                <img src="img/mic.jpg" width="100%" height="auto">
+                <figcaption>LISTEN TO RECORDED SERMONS</figcaption>
+            </a>
+        </div>
+        <br>
+         <h2>OUR PROGRAMS</h2>
+             <div class="slider-frame">
+                <div class="slide-images">
+                    <div class="img-container">
+                        <img src="img/DD.jpg" class="slider">
+                    </div>
+                    <div class="img-container">
+                        <img src="img/FC.jpg" class="slider">
+                    </div>
+                    <div class="img-container">
+                        <img src="img/SS.jpg" class="slider">
+                    </div>
+                </div>
+         <h2>COMING EVENTS</h2>
+             <div class="slider-frame">
+                <div class="slide-images">
+                    <div class="img-container">
+                        <img src="img/vigil.jpg" class="slider">
+                    </div>
+                    <div class="img-container">
+                        <img src="img/fs.jpg" class="slider">
+                    </div>
+                    <div class="img-container">
+                        <img src="img/lib.jpg" class="slider">
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h1>LOCATE US</h1><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8951063871077!2d3.388822075098027!3d6.534929693457825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d1a81f9dea3%3A0x782171aaca9a70!2s3%20Tijani%20Ashogbon%20St%2C%20Bariga%2C%20Lagos%20102216%2C%20Lagos!5e0!3m2!1sen!2sng!4v1728426750137!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <h1>CONTACT US</h1><br>
+                Email: <a href="mailto:therccgthroneofgraceparish@gmail.com">therccgthroneofgraceparish@gmail.com</a><br>
+                Phone no: <a href="tel:+234 (0)8088664747">+234 (0)8088664747</a> 
+            </div>
+            <footer><br>
+                <div>
+                    <p>
+                        <a href="https://www.facebook.com/profile.php?id=61565076790047&mibextid=ZbWKwL" target="_blank">
+                            <i class="fab fa-facebook"></i> 
+                        </a>
+                        <i class="fab fa-instagram"></i> 
+                    </p>
+                   </div>
+                   &copy; 2024 RCCG
+                   The Throne of Grace.<br>
+                   All rights reserved
+            </footer>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </body>
+</html>
