@@ -153,6 +153,19 @@ h1{
     height: 500px;
     display: inline-block;
 }
+.recording_box{
+    text-align: center;
+    justify-content: center;
+}
+.record_box{
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+caption{
+    font-family: cursive;
+}
 figcaption{
     text-align: center;
     font-size: x-large;
